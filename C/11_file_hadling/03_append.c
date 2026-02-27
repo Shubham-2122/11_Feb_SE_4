@@ -7,18 +7,20 @@ int main()
 //  mode : w,r,a
 
 	FILE *file;
+	char str[100];
 
-	file =  fopen("test.txt","w");
+	file =  fopen("test.txt","a");
 	
 	if(file == NULL){
 		printf("Error not Found File..");
 		return 1;
 	}
 	
-	fprintf(file,"Hello test File here");
+	fputs("\ndata append for tech 2",file);
+
 	fclose(file);
 	
-	printf("data successfully print");
+	printf("data successfully print in file append");
 	
 	return 0;
-}
+} 
