@@ -20,7 +20,7 @@ int main()
 //	int num = 1;
 	char demo = 'A';
 	
-	for(r=1;r<=5;r++){
+	for(r=1;r<=4;r++){
 		for(c=1;c<=r;c++){
 			cout<<demo<<" ";
 			demo++;
